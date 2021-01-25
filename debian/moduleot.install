@@ -1,0 +1,11 @@
+motApp /usr/bin/
+motPost /usr/bin/
+example/example_configs/client_config_ex.json /etc/moduleot/example/
+example/example_configs/server_config_ex.json /etc/moduleot/example/
+example/example_configs/certs/rootCA.pem /etc/ssl/certs/
+example/example_configs/certs/mot_servkey.key /etc/ssl/certs/
+example/example_configs/certs/mot_servcert.pem /etc/ssl/certs/
+example/example_configs/certs/mot_clicert.pem /etc/ssl/certs/
+example/example_configs/certs/mot_clikey.key /etc/ssl/certs/
+scripts/modbus/serialForwarder.py /usr/share/moduleot
+Hashfile /etc/moduleot/

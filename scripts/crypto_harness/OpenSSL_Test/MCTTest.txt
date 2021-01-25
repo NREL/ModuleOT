@@ -1,0 +1,18 @@
+
+Title = Leidos ECBMCT128.fax
+
+Cipher = AES-128-ECB
+Key = c4181177c311854230a772af8edc21f1
+Operation = ENCRYPT
+Plaintext = 6d542c70ee84c373ca84469e7152cf6d
+Ciphertext = 42bed844bb5b71a68e902a65ab5c04f6
+
+
+Title = NIST ECBMCT128.rsp
+
+Cipher = AES-128-ECB
+Key = 139a35422f1d61de3c91787fe0507afd
+Operation = ENCRYPT
+Plaintext = b9145a768b7dc489a096b546f43b231f
+Ciphertext= d7c3ffac9031238650901e157364c386
+

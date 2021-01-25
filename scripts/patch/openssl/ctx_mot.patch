@@ -1,0 +1,129 @@
+--- ctx.go	2020-04-06 17:38:38.766109342 -0600
++++ ctx_mod.go	2020-04-14 15:53:39.301635473 -0600
+@@ -14,6 +14,7 @@
+ 
+ package openssl
+ 
++// #include <stdio.h>
+ // #include "shim.h"
+ import "C"
+ 
+@@ -79,6 +80,8 @@
+ 	// Make sure to disable SSLv2 and SSLv3 if you use this. SSLv3 is vulnerable
+ 	// to the "POODLE" attack, and SSLv2 is what, just don't even.
+ 	AnyVersion SSLVersion = 0x06
++	// Added to support TLS default method	
++	TLS	SSLVersion = 0x07
+ )
+ 
+ // NewCtxWithVersion creates an SSL context that is specific to the provided
+@@ -88,6 +91,8 @@
+ 	switch version {
+ 	case SSLv3:
+ 		method = C.X_SSLv3_method()
++	case TLS:
++		method = C.X_TLS_method()
+ 	case TLSv1:
+ 		method = C.X_TLSv1_method()
+ 	case TLSv1_1:
+@@ -169,6 +174,81 @@
+ 	return ctx, nil
+ }
+ 
++// NewCtxFromFilesWithVersion calls NewCtx, loads the provided files, and configures the context to use them.
++// Also sets TLS version
++func NewCtxFromFilesWithVersion(cert_file string, key_file string, version SSLVersion) (*Ctx, error) {
++	var method *C.SSL_METHOD
++	switch version {
++	case SSLv3:
++		method = C.X_SSLv3_method()
++	case TLS:
++		method = C.X_TLS_method()
++	case TLSv1:
++		method = C.X_TLSv1_method()
++	case TLSv1_1:
++		method = C.X_TLSv1_1_method()
++	case TLSv1_2:
++		method = C.X_TLSv1_2_method()
++	case AnyVersion:
++		method = C.X_SSLv23_method()
++	}
++	if method == nil {
++		return nil, errors.New("unknown ssl/tls version")
++	}
++	ctx, err := newCtx(method)
++	if err != nil {
++		return nil, err
++	}
++
++	cert_bytes, err := ioutil.ReadFile(cert_file)
++	if err != nil {
++		return nil, err
++	}
++
++	certs := SplitPEM(cert_bytes)
++	if len(certs) == 0 {
++		return nil, fmt.Errorf("No PEM certificate found in '%s'", cert_file)
++	}
++	first, certs := certs[0], certs[1:]
++	cert, err := LoadCertificateFromPEM(first)
++	if err != nil {
++		return nil, err
++	}
++
++	err = ctx.UseCertificate(cert)
++	if err != nil {
++		return nil, err
++	}
++
++	for _, pem := range certs {
++		cert, err := LoadCertificateFromPEM(pem)
++		if err != nil {
++			return nil, err
++		}
++		err = ctx.AddChainCertificate(cert)
++		if err != nil {
++			return nil, err
++		}
++	}
++
++	key_bytes, err := ioutil.ReadFile(key_file)
++	if err != nil {
++		return nil, err
++	}
++
++	key, err := LoadPrivateKeyFromPEM(key_bytes)
++	if err != nil {
++		return nil, err
++	}
++
++	err = ctx.UsePrivateKey(key)
++	if err != nil {
++		return nil, err
++	}
++
++	return ctx, nil
++}
++
+ // EllipticCurve repesents the ASN.1 OID of an elliptic curve.
+ // see https://www.openssl.org/docs/apps/ecparam.html for a list of implemented curves.
+ type EllipticCurve int
+@@ -522,6 +602,18 @@
+ 	return nil
+ }
+ 
++func (c *Ctx) SetCipherSuites(list string) error {
++	runtime.LockOSThread()
++	defer runtime.UnlockOSThread()
++	clist := C.CString(list)
++	defer C.free(unsafe.Pointer(clist))
++	if int(C.SSL_CTX_set_ciphersuites(c.ctx, clist)) == 0 {
++		return errorFromErrorQueue()
++	}
++	return nil
++}
++
++
+ type SessionCacheModes int
+ 
+ const (

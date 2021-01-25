@@ -1,0 +1,12 @@
+# CAVS 21.4
+# Config info for nrel-openssl-official
+# AESVS MCT test data for ECB
+# State : Encrypt
+# Key Length : 128
+# Generated on Mon Sep 21 09:45:59 2020
+
+[ENCRYPT]
+
+COUNT = 0
+KEY = d8bee1a4c269e1dabdde90eb7a1ac1e8
+PLAINTEXT = 9714b3043a0b6c3e941e0e0b5e73365a

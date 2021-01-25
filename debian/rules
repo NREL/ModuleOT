@@ -1,0 +1,12 @@
+#!/usr/bin/make -f 
+#DH_VERBOSE 1
+%:
+	dh $@ 
+
+override_dh_auto_build:
+	dh_auto_build -- build GOPATH=$(CURDIR)
+
+override_dh_installsystemd:
+	dh_installsystemd --name=moduleot
+	dh_installsystemd --name=motpost
+

@@ -1,0 +1,12 @@
+--- shim.c	2020-04-14 17:04:48.548180086 -0600
++++ shim_mot.c	2020-04-14 17:04:28.392122760 -0600
+@@ -450,6 +450,9 @@
+ 	return NULL;
+ #endif
+ }
++const SSL_METHOD *X_TLS_method() {
++	return TLS_method();
++}
+ 
+ const SSL_METHOD *X_TLSv1_method() {
+ 	return TLSv1_method();

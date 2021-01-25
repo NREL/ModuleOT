@@ -1,0 +1,15 @@
+[Unit]
+Description=ModuleOT service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=root
+ExecStartPre=/bin/chmod +x /usr/bin/motApp
+ExecStart=/usr/bin/motApp
+RestartSec=1
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,2748 @@
+
+bck-i-search: _[K[A[48Cscre[4me[24mn[1B[55De_[A[51Cless[24m [4mE[4mC[24mBMCT128.fax[1B[66Dc_[A[51Cscre[4me[24m[24mn[24m            [1B[66D_ [A[50C./ev[24mp_test ../../test/recipes/30-test_evp_data/[4me[4mv[24mpciph.txt > zzzzwhat.txt
+bck-i-search: ev_[K[A[24me[24mv[1B[K[A[22C[4C[11C[4C             [?1l>[?2004l[1Bksgranda@eltercero[pts/7]: ./evp_test ../../test/recipes/30-test_evp_data/evpciph.txt\1..1
+    # Subtest: run_file_tests
+    1..1
+    # INFO:  @ ../test/testutil/stanza.c:21
+    # Reading ../../test/recipes/30-test_evp_data/evpciph.txt
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBGFSbox128.fax" tests at line 24
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBGFSbox192.fax" tests at line 68
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBGFSbox256.fax" tests at line 106
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBKeySbox128.fax" tests at line 138
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBKeySbox192.fax" tests at line 266
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBKeySbox256.fax" tests at line 412
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBMCT128.fax" tests at line 510
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-42bed844bb5b71a6 8e902a65ab5c04f6
+    # 0000:+cd02f81c206d8474 8e382089f162e5f4
+    #       ^^^^^^^^^^^^^^^^   ^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:512: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-83417fe202adbcb7 7cfc62975b2731ed
+    # 0000:+db5f1eefe909341d 1a861f4a8937167d
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:518: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1cd9250a043c6d55 734a9aa335fcf14a
+    # 0000:+74b1d7f7979e3ca9 4f8cfba00b004254
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:524: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c7e7ddaf8ea39bf0 7f6f1f00b90fe677
+    # 0000:+9c39907e009326ee 62c48efe803bdbc6
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:530: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-6837fabb160d85f7 c98a17cefe12282a
+    # 0000:+9c65c520cb148dfe 4f809559d93ccc32
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:536: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-942c67df77842070 20e8e8e9df868b58
+    # 0000:+9d42400b9ea581a3 b03b61b72fe7c38a
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:542: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-bad412fa9a8ab657 dba160bfc268e917
+    # 0000:+e4accf7616b7e2a0 7f63d5f7f038475b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:548: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-3c3dddd95fc4695a f527f32d508d049c
+    # 0000:+7d461508c3477fee 1ccaa911e6678f62
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:554: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8d23e19dde4d6c0a 382952b16b64258e
+    # 0000:+b80665aaa690c083 761eac4729f88041
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:560: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-90582d112828480a d4249aefe6aa3066
+    # 0000:+3a02b7a19b2dbdda d4849e2d0797d8b3
+    #       ^^^^^^^^^^^^^^^^   ^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:566: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-38533a1f28b57a9a 88da377cb2f21ad3
+    # 0000:+2eef33fc05771a4f 115fa0709903d956
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:572: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-2f7b760913c8d8bd 3745104487dd628f
+    # 0000:+486c45fe202c96f9 208ffea11481da5d
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:578: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-7b1feabc3427345b 96d83a58efe2c93a
+    # 0000:+7bed6ebab4401451 a84675f968922815
+    #         ^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:584: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e6fe8677e593bd7f 36ae2996de76673c
+    # 0000:+684226aa5f095197 8c76431e110e1099
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:590: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-569e8683c4e6d716 ee0a4c2e31d3f26d
+    # 0000:+fc3d8634e1cfddf9 56d7857117c9cb71
+    #       ^^^^  ^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:596: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ad2daac112b362d4 c863f5679dfcfd84
+    # 0000:+4c893cba301a7282 05152eab1d0ca121
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:602: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c20f8794b04581fc 3273ea2c5cc94371
+    # 0000:+bbddb715461013b7 93322553c359f0f8
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:608: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-191c76fe3073ca34 4f3b96bd262a1c33
+    # 0000:+2bf10afa430428cc a1d83e4c165a336a
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:614: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9b1cf85a84a2ed8e f9f9292da720f5b3
+    # 0000:+b89c2b134064fbcd 6b77ea9054dea3b3
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^  
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:620: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a0ab35121d805e74 6414574dac3a6fb1
+    # 0000:+ff9c764638245f9c bd88bbb7ffea718c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:626: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-6a75bd58da6ceb53 87674aa2849848bc
+    # 0000:+36f744ad91a38a6d 8bc521ac26f6e8f2
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:632: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-bc734c04f3d0595e dbe2fa7f2680916d
+    # 0000:+1877a7c37d0fee0f 5d8ecb7031b9fbae
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:638: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-796082de64c236b2 e6fbe8ad679f5a95
+    # 0000:+61ae9727f00a997e d979a99d47b66b1d
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:644: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-cd5300fa1ef06547 885b6c883d402d77
+    # 0000:+f40760191f4dd71a ac05054923446664
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:650: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-12124ed07e67e9cc aaeab9688c458bcd
+    # 0000:+a4955b5b91e84e41 b807544ecedf5f71
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:656: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a7a93c944f6c03fa e6d6b076f8aa1b83
+    # 0000:+f7a726d109934001 0efbbb8efca8062e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:662: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-4595f318fc58df2d bd705e1587d02df8
+    # 0000:+af7792212dced533 ac6abb7cd7b48cee
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:668: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-7e0a0ee2995f117c 8f03ffe9fe25b2c5
+    # 0000:+699f4f277c60a120 de1437daf804baa0
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:674: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ccfbe6ad5d50fa3c 08d287a78ef52508
+    # 0000:+767efd18f3b81251 0230a1ae9616c64b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:680: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e84aec894406b278 b27b1b36e974e7d2
+    # 0000:+141227e556288a89 4e5d1bd84541e50e
+    #       ^^^^^^^^^^^^^^^^ ^^^^  ^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:686: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-592b395047a501d6 f3df76ce6ac30f12
+    # 0000:+1f582b29ca2b2ce7 fb90e9b700dd6d30
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:692: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1d8c2e93452ff103 812260968ecb0ea4
+    # 0000:+9ae53047242d8d0a ba3e950c96588b38
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:698: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-4c1e8b80902bf960 da189e83dc97a287
+    # 0000:+3c83935ae3a09942 3f5ad90dc0695487
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^  
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:704: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-49f30106a40106b4 01936060db25e141
+    # 0000:+97d446c01803e72e d6f1e1e3fe662790
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:710: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-fa6b8773fb72b6b6 07d70a76e807593e
+    # 0000:+a2b8bcfde7cb83b7 1b2ead97b9c3ea6b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:716: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-db453c49a423e345 c1472496240c5f0a
+    # 0000:+1b3913276d0910c0 2f681ceae1fabf37
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:722: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e0147788dda5da92 8e7c022039938324
+    # 0000:+4825a1d32aa39b5c 9683299e172b6547
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:728: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b525313426948639 038108ae49b5f2f8
+    # 0000:+eb35f5060e17eb9c 65efddc286581116
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:734: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e119230d068253af b8ca9efa9dad1bd2
+    # 0000:+20b40f12d55942cd 726d666baeb5dc86
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:740: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c2181725acfac864 9210491b573bc0a9
+    # 0000:+9aa804fef1882935 445b02141f7cd19d
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:746: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b71dd277a8894920 d9455dd54e410f26
+    # 0000:+9fb050403d82f1ea af30908ab3cb9ddd
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:752: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-17de7fcf3a005249 f63723169a3beb09
+    # 0000:+016fc9dee3667357 ab90e61109928186
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:758: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-663e00a3f1279aff 6ffa46478967c7a8
+    # 0000:+4588180e67215dbb bc99239a44146675
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:764: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-2c6052a06441d140 5142c90620d2d6af
+    # 0000:+1c1987f85cab9031 b08b7392139ed175
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:770: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-10db3d969fbb5fc0 e565cb2df0a7b024
+    # 0000:+783955c468f07813 bcc8be98ad5dc148
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:776: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-4cfb6454a957cf50 d2a482b10b1ec043
+    # 0000:+a7aad1ee78e3d88d 4d6466c4f2d56177
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:782: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-f3c0e2dc8e696173 e7848332d0c6a6d9
+    # 0000:+eb332c72b0b6533e 3a63f7d5e73c3529
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:788: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-2621f086a0db9366 8fa46646d42b5f20
+    # 0000:+a9c2772fd726c612 e65ddc75cc7146be
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:794: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e1dc26b5a2912025 ba48b8c12149c994
+    # 0000:+5e1c786f72800442 1f9b1f726a70c5c6
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:800: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-d9ebf7e57e144358 eb7e283f5006c65e
+    # 0000:+1a3f850a834785a9 cf2aab479ff7cf82
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:806: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-594908abbd89167d 6ce8d067f686829c
+    # 0000:+9b566e158d8725b2 fd959d1dda83903b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:812: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b5bb8f4eacbd8ae1 5de135ee49afb88e
+    # 0000:+3ebd67b4cb75f9c2 6e84195c88bdfedb
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:818: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-f8485b9bb4e5df69 82e7b7cf39c04d12
+    # 0000:+f1fe8dcc3f98b322 baa6c90acf644f68
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:824: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-71c43d973a52c98e c8a3f82884ec1852
+    # 0000:+051968c91c5333f2 b84fd02c7e977ecd
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:830: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-201f2e8ec9bdab1c 96686fbcd9022b53
+    # 0000:+809bb7bcd20c5720 8a546a03a58737a8
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:836: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-5721b287fcac2bde 343b3a5cba6e2061
+    # 0000:+482e56cba0c3d69f 764e00b36c89e176
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:842: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-38478a6aca3d9101 572bb527a38c7d7f
+    # 0000:+684041b8ce925a91 9809781a627f5440
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:848: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1e333f1287513787 4703fcc17597ddd4
+    # 0000:+82626a372c747f00 a86e70c9b4a60e8f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:854: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-0657d022639d82e8 5ee8f92487e0975e
+    # 0000:+1f209f85991c7a19 ea82eba65283189c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:860: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b03b1de9f7f7d464 137313390dd2945c
+    # 0000:+d30b4909aec7d26d 25c41be778c54bca
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:866: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-29d9f1bef1550f9a bf479cb93f7419d9
+    # 0000:+bb1951e3812c9663 b0597c0bbff79335
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:872: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-de77af9bb49b4d5e 6163d39ef89201da
+    # 0000:+9dc2c76e3099295f 3dff61113f8fc847
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:878: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-7469c51fd888a3ce 01c8f26dd2774974
+    # 0000:+86573d01e8330123 ced1586e7715ebea
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:884: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-f289565e444a96dc ff1e7b8bcca729dd
+    # 0000:+070cc68e1121a862 25db231aacb19679
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:890: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c267614433b763ca 20f0a40d28e4120d
+    # 0000:+4e9a72856735ac72 9f5f19a0ad1e3349
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:896: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9adc7e0f580c5823 ed7dd8e57cef167f
+    # 0000:+72bdae874f368278 ad18abd9a886428b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:902: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1041c4cf911ffd45 8a0e05cc0d8a5157
+    # 0000:+3bd5bc4f4be18824 6b0c4e9461a7a368
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:908: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-73f77afb4aa3a45f 5a974b8094947479
+    # 0000:+d08570ad53d553df 3869b85cf5861dd7
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:914: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ad00b9a93ae95d9a fa64fb52cd8e0348
+    # 0000:+9c173b5e5643fc74 5041038efaa9c65f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:920: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-d6ab71e9e56dbedd 38b119839971b711
+    # 0000:+610ea5a5f8419788 f292b8bfb29e5a6c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:926: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c43155461ae8b6eb 27d592b3b83183b6
+    # 0000:+bab44baf35536150 268534a46dc35e2e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:932: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-477bfe68523edf4e 0bd436b641f80076
+    # 0000:+9978cb29fdb3592b 2d8e31ab72d95b3e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:938: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8aead1a35e105032 c468ee423e2bd566
+    # 0000:+282323b6ae5e3c58 7554bc90d7825bc0
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:944: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-5f2fe46a99d87d12 e027c8676d295bcb
+    # 0000:+22d784c01be0526b 2a0cf3f1d9718668
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:950: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-593e55dd034cefcc a2a8926d8019de20
+    # 0000:+f3d68acbc0c76196 141fa54418842ade
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:956: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b2cb6dfc18f50e2e 1135a65cd337d841
+    # 0000:+90ba74d8732281db 4865b1624d11d30b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:962: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-3b85842cd4b047b9 a14da13f9b4c6b59
+    # 0000:+5ec112ef8cd597cf f48812ea93d7d119
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:968: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-56977fbb4472e76b 206c41ef36db8714
+    # 0000:+44113079048a614c 6fd6fe67b4410d07
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:974: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-08e01f16e2845161 5deb623e4aeb2877
+    # 0000:+40eacebd0f6aa106 751c7ff4d51a637c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:980: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-aa149d310cc904cf 01591469421579b6
+    # 0000:+f9ec4a430f5de3f7 5da3a19fa7eeb76b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:986: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-602aab23aa32c348 36ed1a29f5def7ca
+    # 0000:+0e19903c4efcff23 17cdba5ad19d0345
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:992: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ef63a390510e5fe3 6a1d46fbf5ed13e1
+    # 0000:+b7e46cb7fb357b3c d91323d524d55d80
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:998: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-d56bfaa8f435bbdb 39988d04a820f386
+    # 0000:+32dac13ea7ead3d3 70bed6481c28bd19
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1004: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-aa2d35563b273fa0 dd10f76b190f1723
+    # 0000:+0da15b442321a5f1 49ec5bfb94f09f86
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1010: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-289b3128aa7d26be 32ab261a9ae2d244
+    # 0000:+b78d1b908d01b5a8 84154b629f4eae3c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1016: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-be14c7ecf1c41a82 81cd09602719840a
+    # 0000:+d66d046070408307 cfc293f45a1bcd45
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1022: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-7e140b21550dda81 f34bc3e68cd2f794
+    # 0000:+c4a277418e16deaf e89860b6621321dc
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1028: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-4a50798db4c7a264 74b739cd41574ea1
+    # 0000:+127a3c713d296ba4 d0c79c88f83614d4
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1034: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-fa8ae8c811040034 4959ea163227a4d1
+    # 0000:+249ce9b655e52e90 c50cdc6df209c043
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1040: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-292c69d51da91100 89e461b73e44eff3
+    # 0000:+bc1c9f13cea75752 5dc626dfde4f3102
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1046: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a5a975d57782a208 0495229b8a641524
+    # 0000:+d6ed721ce599fbb1 8fed25ba0140e3c2
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1052: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-4d0b029cd56b562e 2d1fee3d559d7695
+    # 0000:+b2ebb5dcea55068e 12864d2addbe0200
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1058: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8153da71261a73f4 6baf69749ee198e8
+    # 0000:+81dce61d42f51ee3 2fb1d0d954013f40
+    #         ^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1064: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-5d5685098e5cdbc7 004644e62faaba82
+    # 0000:+bda45c0c7a9ccf8e 40d661d04bfc3617
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1070: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a5ebe4f3635d0acf 7c1c396c84d0c362
+    # 0000:+16088ac799ea01bc 36e79503c0c1969f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1076: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b4913d26a9ce9a03 9b81915b52ce5036
+    # 0000:+2deef50f916848a3 0aa0c5a2929226a1
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1082: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e5edff3fa9fe1e43 8258133993629cea
+    # 0000:+abb8bc6f9fd80042 5bf3b2a2ca2935c2
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1088: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-74e32965281810c5 26cc40077e8ab373
+    # 0000:+0e570542968a8ae0 860bb8083ee862fb
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1094: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-fd1f69821582dea7 d71ead8b7bd6c4ea
+    # 0000:+1bb402fe54f29689 eeca3e65729da152
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1100: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-00de13cc48235c2d b4eb2a83c746465e
+    # 0000:+a7945de4a4cc2f34 0b60df26edc78e34
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1106: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBMCT192.fax" tests at line 1112
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8ac761c800df36a9 18b7c5c8c322e174
+    # 0000:+894a73d206a73dcd 690813f96fc5d604
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1114: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c52c3beb68831d43 ccf5f41086e68636
+    # 0000:+13cdf4f0627c7ddc 4126fdbf23451e63
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1120: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e158809f0683cc8d f1ad051727b2a0ac
+    # 0000:+50bfac1804d57f74 e367350fc4e521af
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1126: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-6fa9ddc01df7ac66 275347cd30f666ef
+    # 0000:+826fb263b65d1846 c370da6d522f8a70
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1132: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-0a4cdccc66097212 3fcafc60d77cc9c6
+    # 0000:+0cac7a3d2cee642b 474dfcd289d8212d
+    #       ^^^^^^^^^^^^^^^^ ^^^^  ^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1138: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a6015f53b0159923 dfaf637601fec0bf
+    # 0000:+b38c24998c79783c 6622039bdc00a2b2
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1144: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-aedbcce0912e97c9 ae6aeb400b059408
+    # 0000:+7753a56eb60f0589 a22d9151e861d26e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1150: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1a085399a2674fca 7540d94faff2eaf8
+    # 0000:+29b322971130ba2e 90f6f1cd387b03d7
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1156: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-85298eb84bd4382e 3fde49bfde312e27
+    # 0000:+38b8c84a4a0e3d5d 06a853601e5fcd40
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1162: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-60509510cc9e47ab dc3ac8ba7b86bad5
+    # 0000:+7f0b7d7980d7c46e de75544cbfd6c2ab
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1168: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-3e988ae1f3d700fb 7bec95ea6cb8b453
+    # 0000:+74c92cca7c4e45b4 40c336a8c9ee25ee
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1174: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-117fb783d00d20e6 fcf0f002c4178963
+    # 0000:+ef83579c5078c068 b1831503bd09765c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1180: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-3f6e03588e4059c8 58ad26e3319367e2
+    # 0000:+b601a54f9029a138 55c245776bfda53f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1186: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9c7e2b66fbddd4f3 269da0bb866152c1
+    # 0000:+e399141fbbedd957 f25da4a79dafbe27
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1192: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-da9bbbb46f007f95 cb3bfe4d486ac1d9
+    # 0000:+ef6f1635892d1708 fefb44ee9356123f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1198: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-95802010b3df53d4 ff0497bace41a7ae
+    # 0000:+89bddc5da46abf84 8de09d8f8d4d5635
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1204: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-2ee8ea22e5b7eac2 0b8852bb3ebe2eb9
+    # 0000:+9a33d593747b0c2a 541083d1b138ce4f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1210: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-552f30b9fd5e55f0 3216b08f557c619a
+    # 0000:+814449d0859f6520 e650cf64ef6b382a
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1216: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8be2ab2a73e0c2a4 48f9bbb43c1beef9
+    # 0000:+b13fd80b802851b1 8fd105bc37aafaf6
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1222: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c86cd9fd1d88d627 b285a72df8c9ea10
+    # 0000:+f4e1eb82abce5098 23dfc40a20f2c529
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1228: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b836b3e82cb8c841 d6b7a9c20c9919ad
+    # 0000:+aa38847a5a3fe991 a459cedfcbc18b95
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1234: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1838a46fa17c248a a9ed3069834308ef
+    # 0000:+0376a2e5e7402e3a d513c6c02d533c2c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1240: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-76c6a92337bb18fb 06811e4a452dcf7c
+    # 0000:+50ba86c2ac8ccbbc efd08fd396f0bdb0
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1246: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-d1a8ef451cea9ed2 bcd17040e06cef0f
+    # 0000:+b61667ee3cc6664c 112bdbaf59f2d510
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1252: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8c7c3a490a8f7cb4 239f8f5555e4c30f
+    # 0000:+e53e1002379c6acc 8c3915a10e30e99b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1258: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-67430c13136fb817 02711012b66504e9
+    # 0000:+ab1b8d5137dd2e0d 43938b80daf3854f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1264: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-734eff2ad25f2d73 e5141404fe3a4ed8
+    # 0000:+ba46d2babd924513 ef0664dba1e1109f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1270: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e95bdb91fdf56bd8 c118e4a2926bb2ab
+    # 0000:+9b4860f97f4b1c23 625bd1900f64599b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1276: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-00d2bfbc3e48f967 17eee82f27fa29b6
+    # 0000:+7e2527f02eec6b3b 3d383cb36aeeedea
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1282: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-2eb3a7c87fecd4fa 9131434467e85ae1
+    # 0000:+478cfbb0dd5b0b1a 6319835219ecdb9d
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1288: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-54904064117da3dc b7bcb8253ec9a6fa
+    # 0000:+bebaaf597a2ed84f fc2dbc5ccfbd3e1a
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1294: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-77ffe39b94bed370 2a06918cd761f977
+    # 0000:+fd9e0d8e6ca9ecc3 b576f46a418a2dc3
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1300: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-cb0581262893f3d1 2432a9d58162c8bb
+    # 0000:+bfa3b6103c0a3188 756e0a94b6e2c9a1
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1306: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e0651126d04cd4bf 9d1ff406ca27307d
+    # 0000:+382821f870ea2a30 fccc14d846c79456
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1312: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-069788c56924d0fb 299998ecd3c32bc3
+    # 0000:+81317e1722b5199c 0e8e247b2c009d49
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1318: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-6b314510aefcdddd c845c0a0301bafda
+    # 0000:+0ff52ea7966c6c12 9472c9a7cf6ee33f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1324: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c99adeb32ddd17a3 d50a3d5c144c4223
+    # 0000:+3d7fd98b436dd048 45af492ed9c0d2bb
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1330: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-f1cc1caa50289bcb 06b2f92ce6787831
+    # 0000:+e3153efb6d7681cf 2a72f9b8fce5f05a
+    #       ^^^^^^^^^^^^^^^^ ^^^^  ^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1336: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-46d265a7250b074b 30c21b1752bb7db5
+    # 0000:+d94cc99a4b469165 89ebf6c2f9c06b60
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1342: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-cfdbfa591039c3dd 6573e907f9396d11
+    # 0000:+8c7353dd2cb18fd2 d46e60464ee6fc9e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1348: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-baa1ac5e09585684 30c1b35ecd94a716
+    # 0000:+97d0fc192a62433e 7cdfb0cd4db27f2b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1354: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-d847ba74c610dc5e 4de8960755a0aaba
+    # 0000:+7448dc566c264a10 fe318ea6ace4966e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1360: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-7d13185910e0a80b 1105ba565f6f26fa
+    # 0000:+0b2b50d8174cee5f 0ab13aa02d8aca26
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1366: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-f2c37e66c6ec7323 8f9be9cee18eaa5c
+    # 0000:+011e31019ea01d74 5fd3c2a50e20079a
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1372: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-d4d9cfb14d67384d c8936ca55f4d88c2
+    # 0000:+6155227337cba0bd 36e05407b2901cd8
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1378: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a621920c327a1d8f 4ddddac9bd7a8ae7
+    # 0000:+75d794d1edce4f4a a0e2d698237f6deb
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1384: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-87b23bfeb2f54566 b395fd1c77052b82
+    # 0000:+2b9f855c77c7be30 3a31e2111c3061f0
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1390: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-3f617d121212886b 72f76961af5c206f
+    # 0000:+d574dc52694968a0 7bfa87ec8a937eda
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1396: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-90faef5e1d25fde7 4cd8dbd8df2c47ea
+    # 0000:+608e7e9344e4494b 057f453d6fd6fbc1
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1402: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-fa82edaa8d0dd7e3 95e38d85c787dac9
+    # 0000:+45356a7b5742a4e3 e0a34d5ca448d8de
+    #       ^^^^^^^^^^^^^^   ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1408: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-01956969fe876e2a c3c9cdbffb9b905c
+    # 0000:+f85cf74f499741d1 f8e091b1ea0aa35c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^  
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1414: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b7d22968125e2a90 009f5864175b347e
+    # 0000:+211cde129f7dd2e1 0d8d00e79f52dc58
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1420: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9cf5adb4186f7e00 706e4d98ef6d19a6
+    # 0000:+180af2e8d18a255f 9c29434b54b1e20d
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1426: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9919da125f7248f3 e5749ec18fa161a8
+    # 0000:+29aef4cd29ef8693 891eaf3cbff92f22
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1432: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-3ee436d0eb116d37 3f3887fc4552098d
+    # 0000:+d658c35f1b3c3cea 213151ac122c6616
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1438: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-6be7d2f0461aac5e 251a0b05ce6836e1
+    # 0000:+bae8260742c0f879 802f16a1a4fa460e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1444: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-08055e134d2f3829 d6351613cafb9fe0
+    # 0000:+a168afbc0a80f2a8 2c8373c668323aa4
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1450: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-d62cb7e0bd8887f3 0be94da4fae619cc
+    # 0000:+b08f476cfda79417 d90ae8ddb48c6101
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1456: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-6c9d8d35b4a673d5 7fe90e9bde5c6e54
+    # 0000:+5562c87e18f0993a 804a87ab86a23e86
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1462: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-26c54efe9d3a3069 d8e887cfe24620d8
+    # 0000:+384cc2c7e860977d 77c5ed11c971b1a7
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1468: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-5be2e1c02f3f5e7b 5584814e90d4c81b
+    # 0000:+2144494d574c5517 9ab37b694d775793
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1474: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-655e29d2879774c8 331d881ff151a0f2
+    # 0000:+0f100a8d0fc9ce66 a8fe9ce9b151d2cb
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^  ^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1480: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-56de2cb7792893e7 84b6cc0dbb0ebba8
+    # 0000:+e59443abd121d7fe dfd33a38c32840c2
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1486: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1dac33f56fa7de5c 1d18b41f07a4f6df
+    # 0000:+7d13af54b78cda63 bf20708c0e13199a
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1492: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8e632dfecee29253 186ec0865d05ff55
+    # 0000:+7185255520aec965 726f53c431909af8
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1498: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ac48ee1963c72683 3e4fd6e9d5bb253c
+    # 0000:+489c00bc49b09a78 07adeb67a3f16c6c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1504: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-db2a8aa0d53b0795 87dcfc33bed68a01
+    # 0000:+560416c140ab9942 f8f4318a178bd20f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1510: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8b553f24af4665e0 f1b18d5a3f12361b
+    # 0000:+dd98e7dba8bb9697 46e875219bc8a81f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1516: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-decddde9b06dd431 c774bf9176a4d7e3
+    # 0000:+827a9f4187d29ddf 578080232cce622a
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1522: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1f6739c5bc313fa5 5a0e05a9bd9b151c
+    # 0000:+2d3fb6e468745276 2f13914920e7509b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1528: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-03ae4c5ba19d2d22 2059851dab574a2a
+    # 0000:+716872eb6e8f6345 4f90e3e07010930d
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1534: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-761f220107042ce1 2bfe252f5335fbae
+    # 0000:+ac3152964178fe07 22db39b5d91b8786
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1540: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-f95a3f12382abf99 ee9509dce35529d4
+    # 0000:+5e45926c10dd98aa 245797f92f13c5e9
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1546: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-63832382169c65cd b9da13f36f33f64b
+    # 0000:+3b4e43a98a09ce6b 0850d9623260f8e7
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1552: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e7fadd3fbaf130d9 8c7c7f85588939c3
+    # 0000:+7859d41f25add1f6 caa7b5903bb2b4d5
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1558: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-5d982978105e560c 37c6bb1cf825127a
+    # 0000:+73728c194b7f57e3 7347b3ac4cfc844d
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1564: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-7f5b385eb30ed20e 768cccecc0c0ac66
+    # 0000:+59c2582a0df97c3f d908cc4a785dd8f9
+    #       ^^^^^^^^^^^^^^^^ ^^^^  ^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1570: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e5745506b28b4cc5 ebfb9a9437c6baef
+    # 0000:+00118c64bb6b6e07 5849ba2d54cebac1
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^  ^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1576: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-55cec83e22c58b83 0ae95af1b26c67f2
+    # 0000:+a3cbfcd5119d4f04 c212dc58823c7452
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1582: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-0e1f655c1c496969 7eff5d0645ca3fe6
+    # 0000:+83768dc9fc33fc1c e151db3d7998c3fc
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1588: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b67a7478f5d50d91 35fe27bfdeb500ae
+    # 0000:+65d125d45d2362b9 2bd1edc85c5b54c8
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1594: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-75a952e244093d81 136090f44851174b
+    # 0000:+8caf10d7695e26f9 123663a2af2b7c68
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1600: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c41b106ce9df9c93 21a794a97bd52010
+    # 0000:+9f625afdcf61a86b c62d5cda66174a04
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1606: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a9ba4aebf05724fc f2c6b9c065895fbc
+    # 0000:+e73c4001f183f814 00bec48fb15ec201
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1612: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-23392855df8fc879 c6f660b10144153a
+    # 0000:+3299b92aabdedde0 d4067531e1b80f2d
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1618: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c0db2fd98b6be20c 77950e5dbcb0f4c0
+    # 0000:+d7a77499c99fa93c 3647bded3435597a
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1624: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ebb895f87ee48d01 ce6f40107a7eb8a9
+    # 0000:+323b2fec6eb15766 f0eb68c7de8c8cb9
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1630: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-2615c8ecc677a595 9a310416462df82a
+    # 0000:+609ff186459bb6bb 0d5c107e4da92e68
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1636: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-7d5ef9c2b1360d82 6e74a8c723b29ad8
+    # 0000:+c040a1170184ecd4 52f6ee4b1098e5f3
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1642: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-4816bb34d62f1beb cb3c1b35cd90a81f
+    # 0000:+504e3fb0f8eb2767 a774a1cd213575a2
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1648: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-38843bfb23dc3aa1 44a853b7aeb3228f
+    # 0000:+126b7b4acd4a897a 75412cd23af14fdf
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1654: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-11459d69ac974d6b 1023079b2ef7fb39
+    # 0000:+4c6058a84504ac39 b060e7d5a7820613
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1660: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e28101ee90a7571c ae2957d5fa34e004
+    # 0000:+4dd81163725bb2ab 9bcd4721ae4367b4
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1666: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-89672781767296b2 96ed3734f9bab4c8
+    # 0000:+a675ca696055ece1 7091cfcf66440308
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1672: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-fa6bc028232a46b0 8fd813f32c397644
+    # 0000:+c1cafffae10cfca6 88a235fee98292ef
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1678: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c6daf8787390b44d 2fa94bc5528b8a01
+    # 0000:+1a8b28ffaf64224a 20b3ed6b2f6494ab
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1684: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c78cf644db7409e5 a294939cd86ce7d9
+    # 0000:+da74fcc518b7c8a9 e9628289ed6de12f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1690: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-6d32ffe8844f4cca 28824b6e02a8ac84
+    # 0000:+5facce515c28c53f 275d4a9223c5cfea
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1696: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9a71b70e56e7222a cc3d9d51ac443620
+    # 0000:+23541c4d5d1b06e4 b8fb9097128f5817
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1702: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b410b0143930706e a3b547b485ce9d03
+    # 0000:+88e4d184f62f4c0b 2ebe28010a7de3fa
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1708: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBMCT256.fax" tests at line 1714
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9e9cea45d4e66f51 4bd7adb5ecbafe5c
+    # 0000:+b9f0c60e7ff9b8c4 03682e182035c0cd
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1716: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8b2f173280151f03 875e4a10520697c6
+    # 0000:+1d3afa1c306e3de1 e8087bcf139c26ae
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1722: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-54f1bb5f27ce26c6 0c21de97796d9b98
+    # 0000:+57026f0e553b6b57 ca0109396ea6ba88
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1728: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ca882833d7e83739 be4026119716f106
+    # 0000:+983635014ef94e05 aa8fe03ef06074b4
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1734: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-224a58202288b7cb 88cb5ad1c456824e
+    # 0000:+769e6feef5916b72 772e44847e6604d0
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1740: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-006b4cc5079303de ea75f25be5ab7813
+    # 0000:+345b65755b0c6bae b52d11308c53d9de
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1746: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-313020c97ddeec17 15233dbd2f1715ed
+    # 0000:+8926e873c0b429d9 44fd95b6f4934c34
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1752: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-14565e2501daec50 1a1d870bb4e07559
+    # 0000:+7b2c9f1aafa63c87 f970c3ec60ec3fd0
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1758: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-306563e4b3d6336b 09b68ac23a13770c
+    # 0000:+99824fe728d9faea 5e48eace53718fc1
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1764: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a46d56ae6dc811ed 25882263f2bdcd6c
+    # 0000:+659cb03b869a92e9 61369e92dd6b039e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1770: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a5d9878e0f97f7be c295a2722ae954d6
+    # 0000:+d1ae850552ab0a88 bffc6f0731b173a9
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1776: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-5c53584b536d6f74 ca6b10472f968a8f
+    # 0000:+6a4618a7022469ed 5640a7ff0eaa613f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1782: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b07b7649234fb90e 87b8862ee7ce75ec
+    # 0000:+1d3a450b02911627 ff2faf29ad6d06b6
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1788: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-05847aefd68ee3ce 86e70531aab27aac
+    # 0000:+643f3e03ab49f814 7524d846b679511e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1794: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b5e53d4b11d273e2 9ef5870bae1935d1
+    # 0000:+be8c1793f72f212d 545ad072b63723f0
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1800: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-71cf3d7ff7f48bf7 50033975fa6589ac
+    # 0000:+6f7f329b9772f534 46e5a4ab27bff304
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1806: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9df4ec8e8026262a 12b10036fc987dd1
+    # 0000:+b8ab77b96f315dd5 ef790bdf02bd0403
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1812: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-291768d19a4a7355 9d8f150cfca2e1a3
+    # 0000:+a023ec8ec8153b66 45fda32c23721c65
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1818: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-f987539786629422 e56d7e4b4efa8a19
+    # 0000:+76b51267f8f39967 066fb3e199d2865c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1824: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-7e5714337b944858 7982866bf16951c3
+    # 0000:+ed58850887cbac4f 9a08fbbb4c16a9ae
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1830: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-fb34bc4fc1e3f05b 4cb37d3dbf75ae2f
+    # 0000:+04aa8b26cfa8dba4 b0e0c3201cc52bec
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1836: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-359a324d262476db 3fd86de72c4d8f57
+    # 0000:+ca14f1b1de29c6fe 75679a13ee8230dc
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1842: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-915eada8fc64400e ececdc2c0b2fd004
+    # 0000:+0c4105bd16d3d10e 5eaad97a6f68ecef
+    #       ^^^^^^^^^^^^^^   ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1848: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-3e0953d9421fd893 64bc0c614418321c
+    # 0000:+2fe5963d34a99c09 1dacf8ac45a6d0ae
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1854: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-02792470a13599f4 5ef7bfec9759e8b5
+    # 0000:+5caf8005c557ba5d 10a27ad2ca7ddc00
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1860: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-cb90b92a5cfc3df4 abfbf494b68fc990
+    # 0000:+1517ce9d5d730061 bcb8a5dfbac0b343
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1866: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c0fb8fcb5fe954cd 346a4c2a0f742514
+    # 0000:+48c3c5533ef0874e 983bbe159aa4e7da
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1872: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-2224132c86b6d1e7 6a514c64b17d5eb7
+    # 0000:+b2bf35a36492e057 bb4a5faedbceb6b1
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1878: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-d8686a3e95177670 2d1cb18aaba2a4cd
+    # 0000:+8df20f62b08a0f5b 61990bdebc770fb5
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1884: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e395bb8a2e985fc8 ebe714ec4a4e7c90
+    # 0000:+b41711ddb30356a6 208b532985b34782
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1890: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9db2482f426cd7e2 6ce8c291730fd29f
+    # 0000:+84d4a4baeb176cdc 1afe39c693da9c6e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1896: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-b25738494ca3c780 efe648e49c0df611
+    # 0000:+6ff7e8c7e1d116e8 029251e0cb182f07
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1902: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a50ca06615ddd77b 7186f7499c126b1f
+    # 0000:+05b4e106b7cff9e4 8af84bb11e095a02
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1908: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ec33d7d66cc1ffa2 2863d6159b9a120b
+    # 0000:+5090e9e0fa4ad380 814ea9e8c1b0a527
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1914: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-231e8fc920ba3313 370af03e72de987d
+    # 0000:+4c1caf7ba9d3c505 71065de024789fb8
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1920: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-fabb96d1ba09d170 ac6b2753f050cf8d
+    # 0000:+c59c55b1f88949dd 06b15b05ad1aa015
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1926: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e9845c957f851e4c 16f0d9c62a4dbce1
+    # 0000:+f3da8eab09b7703a 4ce0160a2d96cff0
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1932: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e9a800a17ab16903 e1f0202231e529e4
+    # 0000:+f4ab9a6e5e4d1711 4bff8939350dc146
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1938: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a62c8652f76f4a22 0a430b5e0a0e88a6
+    # 0000:+36cb64dd06b90a26 4d83f9ef16538554
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1944: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-acce390ffd0bc103 b5dfc6ed39230b4a
+    # 0000:+3cccbe1e41dbd338 5c03157978d27dc6
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1950: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1a6941981aa68494 0927c3a52afd5dd4
+    # 0000:+f52a7ad1baf7e0cd f48e744643f346a2
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1956: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-aa1a97699ce8b9c5 acf771c8af87e477
+    # 0000:+2dfdedd271570fd7 bf0f4d40401a5b16
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1962: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-aa0dbfb0c35ecdd1 8a7f28f5f7fb65ee
+    # 0000:+f3323f497240a1b4 3c5e7345da9368a2
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1968: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-358b6089d2efa889 8467a09f165112fa
+    # 0000:+e81aaef4defef3ef 97601cf7f07de720
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1974: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-0947f9cfadd183d8 8a91132506527c1b
+    # 0000:+1dcf9787a753d600 53e90cd294b24a6b
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1980: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8714885ab55208db 0ed7c83d3698d0c5
+    # 0000:+cb228adbf92019c4 d71f8da3cdb37173
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1986: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-34c923cb1961684b b2e07d669df11c1f
+    # 0000:+79d1f5150b48bc84 3808cd57e12ab226
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1992: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-2c416df69e9243de 5ac7833ea2492236
+    # 0000:+7c149b1bb456a9df 21a93d4cc663fa5a
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:1998: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-decf459399f183a0 6f43df71c36a2659
+    # 0000:+45f0f16d7f27e2d1 8e84d132642e3aa9
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2004: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-77a5794413011ff0 c9bf80f552a05cfe
+    # 0000:+ebcb41dad4fe0db2 e517a6186ab43e90
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2010: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-744c638384aa3ea2 ab643212f5d865b9
+    # 0000:+6c378d280e40f5fb 331ebb6fd0443358
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2016: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ab738edc65a7002e 7a893bfe8cad35f9
+    # 0000:+8ebca9f6f9f55388 faee1e920e7a0e9f
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2022: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-98491184c35947a0 9d4223643d4bc839
+    # 0000:+d26aeb604b4c0e05 76789e7e590478b9
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2028: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-0e780960d45bb3e3 b9fa567a30f4ecf1
+    # 0000:+9daa68e8ae7d5a98 125680b4116b09b7
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2034: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1bc0fd794b4bb7b5 834f92656a8181bf
+    # 0000:+174f22f00beac005 e6a011c94e677de3
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2040: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-28dded696ec143fc 6513cc563cfb6e2a
+    # 0000:+16baff8680f10be8 d7cbd5b6bd832102
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2046: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c2b85b2d9c2a3544 df79f762acb7a672
+    # 0000:+dfc4236a3875edae 97a76dea9556f8da
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2052: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-f5f7b5c0b2cd172b d6ff365c4c96fd65
+    # 0000:+f1f81425793c95bd 1987d6ab7dea2561
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2058: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-6cdb06f613c4ce57 892116d221cd0175
+    # 0000:+e71b635a342e2652 45f3b2347a9004bf
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2064: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-60b9f07d6ee95a2b 3ae5e624d18147c6
+    # 0000:+47713c68ef8ebcc5 fb1b62cf62f923d7
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2070: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ffef7d47eb9d970f ed01fef03583f80d
+    # 0000:+0771ffdfb07dc0e2 1e29d12b4c8b6d17
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2076: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-aacb21298562f583 da7d4befba49a738
+    # 0000:+c0412c9635658318 cce464bc22cde9c9
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2082: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-3cbca439ada15ae3 e5726b9bd7056b88
+    # 0000:+ffc53dfd9da34574 323f843c2fcade36
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2088: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-70a0bff98a695b1c 4edd269bd3a2412a
+    # 0000:+ea9621550457428d 47c7b27218f0179c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2094: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-516da1ab4b00ccb8 f0827960f11a73ea
+    # 0000:+95f53d05b140a2fc dc869c7b5fec78db
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2100: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-80b9e1d2edb1e93e 649d1063eb52a1c1
+    # 0000:+80a41a160172521d 2450f3934d9db5be
+    #         ^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2106: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9c3401127c621c8d d30908d479da0693
+    # 0000:+c1b2529fb2b61c8b 3c110920b4c0d29b
+    #       ^^^^^^^^^^^^  ^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2112: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-033fb875ea01738d cb1dfa9844788ea6
+    # 0000:+c429a60bb15b1fbf ac5dc93b953d4175
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2118: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9b4ec70dd9c7ddcc 674f131f7a45ca36
+    # 0000:+35b1b3e30559b1dc f863a1eb15ab2348
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2124: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c5897c2cbda47a77 cc64d407a3b8ee15
+    # 0000:+621aa4567987b71e eaef878ee71cc947
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2130: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a0fecbdc2e9c21a9 c32d08ee27043950
+    # 0000:+b6bd8f2a9d2f9eb4 515b9835abe72af7
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2136: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-7bb6c74a61c86b8d 506d4fe19260fd85
+    # 0000:+35c1bb7693bf5a19 651b9675e7c0d61c
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2142: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-9f256f1aa6e39b56 3650d0417e04c30e
+    # 0000:+84d5a6c3c21e6fb6 6cad57b49d17d9fe
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2148: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-fcb86c40748f084f 6befb739114becdb
+    # 0000:+eed5aa4df2245a3a 47719f103bc130c6
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2154: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a56b77dfd626e484 bb9605e0d1826b68
+    # 0000:+a3c3a505ba6c2ab1 45f873339a8c017e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2160: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-ee77bab0274fff1c 75e4bd138a897d7e
+    # 0000:+99e6dc52ad73ee82 64d3762ab48f607e
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^  
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2166: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-e465065a4c75072e b66d2bacbc409c62
+    # 0000:+d1dc48dab03ef58d 3ca10b4c3728c474
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2172: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-3712218af843d27d 958dde677c4b16e0
+    # 0000:+743e51aa7ae1df7a adcc91e0463f5807
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2178: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-2006db4a4417c8b0 39f98e9077a33f0e
+    # 0000:+966030d0d1a72bba 6dd1feeb5098d536
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2184: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-a779d9daa6d4ddaf 9b6aa3f2d0efca39
+    # 0000:+57c14565ebaf7b8b b0adba7a9da9c8a6
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2190: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-2168e6a7a3c18006 2e6d91a1f293cb98
+    # 0000:+f12e37f77bff6b14 51de6c426334a7b1
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2196: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-6ffdafdf92941cd0 806aa582dee027b3
+    # 0000:+fb6c1a0d6e768678 35a2c14b702bcbb5
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2202: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-d57fba3a6c2832df a76cfca072b53abf
+    # 0000:+6ddf5862503ad229 a56f1803ff9b1708
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2208: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-c495a8b232747d3f ccd0a3e1388f0f18
+    # 0000:+d29904988d560079 9d5c2632d5b02ee8
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2214: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-1c877f039489abf8 f6327d0bcc53d0b3
+    # 0000:+bfa8e1e872cf6c3b ca0ff7925ee3ebd1
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2220: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-10043d35443b0e74 b994ff5e7ce0a22f
+    # 0000:+fa0a5ac152174235 e1d49b6bf5ace156
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2226: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-6ed59f3a06e474f7 b60b24a9bba3df7c
+    # 0000:+bb2d1afef2dfc933 189cf7f186c870d1
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2232: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-603c4e755d019d44 73240da067cbaf3f
+    # 0000:+036b458b48693495 dc903b103f70be24
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2238: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-8ba885ccacd7f001 60deb3a947a1f571
+    # 0000:+7d912af39c664262 8369bf2bc804aca6
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2244: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-12411abac2c599a3 1dfc54dd14319abf
+    # 0000:+ea5f8cc59ed10c22 b7c04fb33ad06332
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2250: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-f23fb2de7c19dbf1 c5233419cfa2b134
+    # 0000:+19a9c3c1125f42e2 9a8877b48ea50f86
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2256: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-4ddf56269d6d82b0 498152f29771d4da
+    # 0000:+ca743f2278975dcc 6a5b071b1f0b42a1
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2262: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-f139855bbff18a81 d55e1744224cb2af
+    # 0000:+14a4a25b4c4cb2b9 78a5447f340f8471
+    #       ^^^^^^  ^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2268: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-86ff1d120447dfe8 5c5a852e49c9bd4e
+    # 0000:+e9a5317dae3748a6 f19ae8bb8a35e516
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2274: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-506ea0cb0f97772f 79997acee6832b3b
+    # 0000:+7ac366d7710a2fc6 640618c2440458b9
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2280: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-87fa7637307cd076 9801fe1f83c17391
+    # 0000:+0584d5967ad3c337 16c054ef1c28a061
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2286: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-34ea5289ad338ea3 5751bc8ea0742110
+    # 0000:+b187964056034675 57eae2add65665c7
+    #       ^^^^^^^^^^^^^^^^   ^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2292: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-d6b24f4dfe4052c2 f4fc00aa65438a0b
+    # 0000:+a712b4622eb05364 ff7accbb3bd00471
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2298: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-7eb7fdf2a97a8ece ae53d85b69bc9729
+    # 0000:+cc85d25e6e5dcb5b c28f33409691ee99
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2304: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # ERROR: (memory) 'expected == got' failed @ ../test/evp_test.c:92
+    # --- expected
+    # +++ got
+    # 0000:-abfc46d5b0b9dcc9 b391d5a0848a4a35
+    # 0000:+368142bfe8d9aaf2 2e8194cf9a076a62
+    #       ^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^
+    # 
+    # INFO:  @ ../test/evp_test.c:2375
+    # ../../test/recipes/30-test_evp_data/evpciph.txt:2310: Source of above error (aligned in-place, not fragmented); unexpected error VALUE_MISMATCH
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBMMT128.fax" tests at line 2316
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBMMT192.fax" tests at line 2378
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBMMT256.fax" tests at line 2440
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBVarKey128.fax" tests at line 2502
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBVarKey192.fax" tests at line 3272
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBVarKey256.fax" tests at line 4426
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBVarTxt128.fax" tests at line 5964
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBVarTxt192.fax" tests at line 6734
+    # INFO:  @ ../test/testutil/stanza.c:121
+    # Starting "Leidos ECBVarTxt256.fax" tests at line 7504
+    # INFO:  @ ../test/testutil/stanza.c:33
+    # Completed 1369 tests with 300 errors and 0 skipped
+    not ok 1 - ../../test/recipes/30-test_evp_data/evpciph.txt
+not ok 1 - run_file_tests
+[1m[7m%[27m[1m[0m                                                                                               ksgranda@eltercero[pts/7]\[0m[27m[24m[J[00;00m[01;38;5;113msgranda@eltercero[38;5;232m:[38;5;74m...nssl-1.1.1d-0+deb10u3/build_static/test [01;38;5;9m$ [00;00m[K[19C[00;00m[38;5;1m[1][01;38;5;221m[ 3:52PM][00;00m[31D[?1h=[?2004h

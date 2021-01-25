@@ -1,0 +1,7 @@
+Title = Leidos ECBGFSbox128.fax
+
+Cipher = AES-128-ECB
+Key = 00000000000000000000000000000000
+Operation = ENCRYPT
+Plaintext = f34481ec3cc627bacd5dc3fb08f273e6
+Ciphertext = 0336763e966d92595a567cc9ce537f5e

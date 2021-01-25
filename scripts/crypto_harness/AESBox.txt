@@ -1,0 +1,7 @@
+Title = ECBMCT128.fax
+Count = 0
+Cipher = AES-128-ECB
+Key = c4181177c311854230a772af8edc21f1
+Operation = ENCRYPT
+Plaintext = 6d542c70ee84c373ca84469e7152cf6d
+Ciphertext = 42bed844bb5b71a68e902a65ab5c04f6

@@ -1,0 +1,308 @@
+int main(int argc, char *argv[]) 
+{
+    //Open the File and see what it do
+    //printf("Argument: %s\n", argv[1]);
+    FILE * VectorFile;
+    //VectorFile = fopen(argv[1], "r");
+    VectorFile = fopen("AES_CipherTest.txt", "r");
+    //VectorFile = fopen("AESBox.txt", "r");
+
+    if(VectorFile == NULL)
+    {
+        printf("Can not open Vector File\n");
+        return -1;
+    }
+    
+    
+    //Parse AES Cipher Text from Python File
+    //
+    //
+
+    char filestream[1024];
+    int newrecord = 0;
+    char *data;
+
+    struct vectors* head = NULL;
+    struct vectors* sentinal= NULL;
+    struct vectors* playback= NULL;
+
+    //Create struct of vector data
+    head = (struct vectors*)malloc(sizeof(struct vectors));
+    sentinal = head;
+    playback = head;
+
+
+
+    //Go line by line to start grabbing values
+    while(fgets(filestream, sizeof(filestream), VectorFile))
+    {
+        if(strstr(filestream,"=") && filestream[0]!='\n' && filestream[0] != '#')
+        {
+            if(strncmp(filestream, "Title =",7)==0) //The Type of Test
+            {
+                data = strtok(filestream, "=");
+                data = strtok(NULL,"=");
+                if(data[0] == ' ')
+                    memmove(data, data+1, strlen(data));
+                //printf("%s....", data);
+                strncpy(sentinal->testtype,data,strlen(data)-5);
+                strncpy(sentinal->filename,data,strlen(data)-5);
+                strcat(sentinal->filename,".rsp");
+                newrecord++;
+                    
+            }
+            if(strncmp(filestream, "Count =",7)==0)
+            {
+                data = strtok(filestream, "=");
+                data = strtok(NULL,"=");
+                if(data[0] == ' ')
+                    memmove(data, data+1, strlen(data));
+                sentinal->vcount = atoi(data);
+                newrecord++;
+            }
+
+            if(strncmp(filestream, "Cipher =",7)==0)
+            {
+                data = strtok(filestream, "-");
+                data = strtok(NULL,"-");
+                if(data[0] == ' ')
+                    memmove(data, data+1, strlen(data));
+                strncpy(sentinal->ciphertype, data, 3);
+                newrecord++;
+            }
+		
+            if (strncmp(filestream, "Key =",5)==0)
+            {
+                data = strtok(filestream, "=");
+                data = strtok(NULL,"=");
+                if(data[0] == ' ')
+                    memmove(data, data+1, strlen(data));
+                strncpy(sentinal->key, data, strlen(data)-2);
+                sentinal->keylen = strlen(sentinal->key);
+                newrecord++;
+            }
+		
+            if(strncmp(filestream, "Operation =",11)==0)
+            {
+                data = strtok(filestream, "=");
+                data = strtok(NULL,"=");
+                if(data[0] == ' ')
+                    memmove(data, data+1, strlen(data));
+                strncpy(sentinal->op, data, strlen(data)-1);
+                newrecord++;
+            }
+		
+            if(strncmp(filestream, "Plaintext =",11)==0)
+            {
+                data = strtok(filestream, "=");
+                data = strtok(NULL,"=");
+                if(data[0] == ' ')
+                    memmove(data, data+1, strlen(data));
+                strncpy(sentinal->pt, data, strlen(data)-2);
+                sentinal->ptlen= strlen(sentinal->pt);
+                newrecord++;
+            }
+		
+            if(strncmp(filestream, "Ciphertext =",12)==0)
+            {
+                data = strtok(filestream, "=");
+                data = strtok(NULL,"=");
+                if(data[0] == ' ')
+                    memmove(data, data+1, strlen(data));
+                strncpy(sentinal->ct, data, strlen(data)-2);
+                sentinal->ctlen= strlen(sentinal->ct);
+                newrecord++;
+            }
+
+            if(newrecord == 7)
+            {
+                newrecord = 0;
+                sentinal->next=(struct vectors*)malloc(sizeof(struct vectors));
+                sentinal=sentinal->next;
+                sentinal->next= NULL; //set the nullbit
+
+            }
+
+        }
+    }
+
+    int rn = 1;
+    while(playback->next!= NULL)
+    {
+        /*
+        printf("Record Number: %i \n",rn);
+        printf("File %s\n", playback->testtype);
+        printf("AES-%s-ECB\n", playback->ciphertype);
+        printf("Key:%s\n", playback->key);
+        printf("Operation:%s\n", playback->op);
+        printf("Plaintext:%s\n", playback->pt);
+        printf("Ciphertext:%s\n", playback->ct);
+        */
+        process(playback);
+        //printf("Record Number: %i \n",rn);
+        playback = playback->next;
+        rn++;
+    }
+
+
+
+    //Write out CAVP Report
+    //
+    //
+    playback = head;
+    time_t now;
+    char * header1_fmt = "# CAVS 21.4\n";
+    char * header2_fmt = "# Config info for nrel-openssl-sample\n";
+    char * header3_fmt = "# AESVS ";
+    char * header4_fmt = "# State : Encrypt\n";
+    char * header5_fmt = "# Key Length: ";
+    char * header6_fmt = "# Generated on ";
+    char * operation_fmt ="[ENCRYPT]\n";
+    char * count_fmt="COUNT = ";
+    char * key_fmt="KEY = ";
+    char * pt_fmt="PLAINTEXT = ";
+    char * ct_fmt="CIPHERTEXT = ";
+    char * fail_fmt="########FAILED CIPHERTEXT########";
+    char * break_fmt="\n";
+    FILE * ResponseFile;
+    int newfile; 
+    while(playback->next!= NULL)
+    {
+        printf(">>FILE: %s Count: %i \n",playback->filename, playback->vcount);
+        if(playback->vcount == 0)
+        {
+            printf("%s \n", playback->filename);
+            ResponseFile = fopen(playback->filename, "w");
+            fwrite(header1_fmt, 1,strlen(header1_fmt), ResponseFile);
+            fwrite(header2_fmt, 1,strlen(header2_fmt), ResponseFile);
+            fwrite(header3_fmt, 1,strlen(header3_fmt), ResponseFile);
+
+            fwrite(playback->testtype, 1,strlen(playback->testtype)-3, ResponseFile);
+            fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+
+            fwrite(header4_fmt, 1,strlen(header4_fmt), ResponseFile);
+            fwrite(header5_fmt, 1,strlen(header5_fmt), ResponseFile);
+            fwrite(playback->ciphertype, 1,strlen(playback->ciphertype), ResponseFile);
+            fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+
+            time(&now);
+            fwrite(header6_fmt, 1,strlen(header6_fmt), ResponseFile);
+            fprintf(ResponseFile, "%s\n", ctime(&now));
+
+            fwrite(operation_fmt, 1,strlen(operation_fmt), ResponseFile);
+        }
+        //while(playback->next->vcount != 0)
+
+        //Vector Count
+        fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+        fwrite(count_fmt, 1,strlen(count_fmt), ResponseFile);
+        fprintf(ResponseFile, "%i", playback->vcount);
+
+        //Key Text
+        fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+        fwrite(key_fmt, 1,strlen(key_fmt), ResponseFile);
+        fwrite(playback->key, 1,playback->keylen, ResponseFile);
+        //fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+
+        //Plain Text
+        fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+        fwrite(pt_fmt, 1,strlen(pt_fmt), ResponseFile);
+        fwrite(playback->pt, 1,playback->ptlen, ResponseFile);
+        //fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+
+
+        //Cipher Text
+        fwrite(playback->pt, 1,playback->ptlen, ResponseFile);
+        //fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+
+
+        //Cipher Text
+        fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+        if(playback->pass == 0)
+        {
+            fwrite(fail_fmt, 1,strlen(fail_fmt), ResponseFile);
+        }
+        else
+        {
+            fwrite(ct_fmt, 1,strlen(ct_fmt), ResponseFile);
+            fwrite(playback->ct, 1,playback->ctlen, ResponseFile);
+        }
+        fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+        //fwrite(playback->pt, 1,sizeof(playback->pt), ResponseFile);
+
+        playback = playback->next;
+
+    }
+
+    fclose(VectorFile);
+
+}
+
+
+
+
+
+
+/////////////
+        /*if(playback->vcount == 0)
+        {
+            printf("%s \n", playback->filename);
+            ResponseFile = fopen(playback->filename, "w");
+            fwrite(header1_fmt, 1,strlen(header1_fmt), ResponseFile);
+            fwrite(header2_fmt, 1,strlen(header2_fmt), ResponseFile);
+            fwrite(header3_fmt, 1,strlen(header3_fmt), ResponseFile);
+
+            fwrite(playback->testtype, 1,strlen(playback->testtype)-3, ResponseFile);
+            fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+
+            fwrite(header4_fmt, 1,strlen(header4_fmt), ResponseFile);
+            fwrite(header5_fmt, 1,strlen(header5_fmt), ResponseFile);
+            fwrite(playback->ciphertype, 1,strlen(playback->ciphertype), ResponseFile);
+            fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+
+            time(&now);
+            fwrite(header6_fmt, 1,strlen(header6_fmt), ResponseFile);
+            fprintf(ResponseFile, "%s\n", ctime(&now));
+
+            fwrite(operation_fmt, 1,strlen(operation_fmt), ResponseFile);
+        }
+        //while(playback->next->vcount != 0)
+
+        //Vector Count
+        fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+        fwrite(count_fmt, 1,strlen(count_fmt), ResponseFile);
+        fprintf(ResponseFile, "%i", playback->vcount);
+
+        //Key Text
+        fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+        fwrite(key_fmt, 1,strlen(key_fmt), ResponseFile);
+        fwrite(playback->key, 1,playback->keylen, ResponseFile);
+        //fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+
+        //Plain Text
+        fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+        fwrite(pt_fmt, 1,strlen(pt_fmt), ResponseFile);
+        fwrite(playback->pt, 1,playback->ptlen, ResponseFile);
+        //fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+
+
+        //Cipher Text
+        fwrite(playback->pt, 1,playback->ptlen, ResponseFile);
+        //fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+
+
+        //Cipher Text
+        fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+        if(playback->pass == 0)
+        {
+            fwrite(fail_fmt, 1,strlen(fail_fmt), ResponseFile);
+        }
+        else
+        {
+            fwrite(ct_fmt, 1,strlen(ct_fmt), ResponseFile);
+            fwrite(playback->ct, 1,playback->ctlen, ResponseFile);
+        }
+        fwrite(break_fmt, 1,strlen(break_fmt), ResponseFile);
+        //fwrite(playback->pt, 1,sizeof(playback->pt), ResponseFile);
+
+        */

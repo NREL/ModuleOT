@@ -1,0 +1,6 @@
+These Patches are for github.com/spacemonkeygo/openssl
+
+commit c2dcc5cca94ac8f7f3f0c20e20050d4cce9d9730
+Author: Ramesh V Rayaprolu <rarayapr@cisco.com>
+Date:   Wed Oct 17 13:33:07 2018 -0700
+

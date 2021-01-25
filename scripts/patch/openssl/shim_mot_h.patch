@@ -1,0 +1,10 @@
+--- shim.h	2020-04-14 17:04:51.368188238 -0600
++++ shim_mot.h	2020-04-14 17:04:43.172164623 -0600
+@@ -55,6 +55,7 @@
+ 
+ extern const SSL_METHOD *X_SSLv23_method();
+ extern const SSL_METHOD *X_SSLv3_method();
++extern const SSL_METHOD *X_TLS_method();
+ extern const SSL_METHOD *X_TLSv1_method();
+ extern const SSL_METHOD *X_TLSv1_1_method();
+ extern const SSL_METHOD *X_TLSv1_2_method();

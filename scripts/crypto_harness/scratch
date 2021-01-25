@@ -1,0 +1,332 @@
+
+/*Decrypt Example
+    char * t_testtype = "DVPT"; 
+    char * t_filename= "DVPT128"; 
+    int t_ciphertype= 128; 
+    int t_alen=   0; 
+    int t_plen=   0; 
+    int t_nlen=   7; 
+    int t_tlen=   4; 
+    int t_count=  0; 
+    unsigned char * t_key= "f439dec5fc439657525a4a95cf7f42b3"; 
+    unsigned char * t_nonce= "b07f8c6b6896cb"; 
+    unsigned char * t_adata= "00"; 
+    unsigned char * t_ciphertext= "b52852a9"; 
+    unsigned char * t_payload= "00"; 
+    */
+
+
+/*****************************************************************************/
+    //decrypt - VADT only
+/*****************************************************************************/
+    /*int outlen, rv;
+    unsigned char outbuf[1024];
+    EVP_CIPHER_CTX *ctx; 
+    ctx = EVP_CIPHER_CTX_new();
+    EVP_EncryptInit_ex(ctx, EVP_aes_128_ccm(), NULL, NULL, NULL);
+    EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_AEAD_SET_IVLEN, hex_noncelen, NULL);
+    EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_AEAD_SET_TAG, sentinal->tlen, NULL);
+    EVP_DecryptInit_ex(ctx, NULL, NULL, sentinal->key, sentinal->nonce);
+    EVP_DecryptUpdate(ctx, NULL, &outlen, NULL,hex_ciphertextlen);
+    EVP_DecryptUpdate(ctx, NULL, &outlen, sentinal->adata, hex_adatalen);
+    rv = EVP_DecryptUpdate(ctx, outbuf, &outlen, sentinal->ciphertext, hex_ciphertextlen);
+   
+    printf("%i rv\n\n", rv);
+    BIO_dump_fp(stdout, outbuf, outlen);
+
+    //BIO_dump_fp(stdout, sentinal->ciphertext, sizeof(sentinal->ciphertext));
+    //BIO_dump_fp(stdout, sentinal->nonce, sizeof(sentinal->nonce));
+    //BIO_hex_string(stdout,1,2, sentinal->ciphertext, sizeof(sentinal->ciphertext));
+    //
+*/
+
+/*****************************************************************************/
+/*****************************************************************************/
+/*****************************************************************************/
+/*****************************************************************************/
+    
+	//encrypt - VADT, VNT, VPT, VTT
+    /*
+       int out1 = 0;
+       unsigned char ct[1024];
+       unsigned char ptt[1024];
+       unsigned char *hex_key; //hexstr2buf
+       long hex_keylen, ctt_keylen;
+       hex_key = OPENSSL_hexstr2buf(sentinal->key, &hex_keylen);
+       printf("%s", OPENSSL_hexstr2buf(sentinal->ciphertext, &ctt_keylen));
+    //Begin 
+    EVP_CIPHER_CTX *ctx; 
+    ctx = EVP_CIPHER_CTX_new();
+    EVP_EncryptInit_ex(ctx, EVP_aes_128_ccm(), NULL, NULL, NULL);
+    EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_CCM_SET_IVLEN, sentinal->nlen, 0);
+    EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_CCM_SET_TAG, sentinal->tlen, 0);
+    EVP_EncryptInit_ex(ctx, EVP_aes_128_ccm(), NULL, hex_key, sentinal->nonce);
+    EVP_EncryptUpdate(ctx, 0, &out1, 0, sentinal->plen);
+    EVP_EncryptUpdate(ctx, 0, &out1, sentinal->adata, sentinal->alen);
+    EVP_EncryptUpdate(ctx, ct, &out1, ptt, sentinal->plen);
+    EVP_EncryptFinal(ctx, &ct[out1], &out1);
+    EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_CCM_GET_TAG, sentinal->tlen, ct + sentinal->plen);
+
+    char * goat;
+    goat = OPENSSL_buf2hexstr(ct, ctt_keylen);
+    //printf("Cipher Text: %s", goat);
+    printf("%s", goat);
+    */
+
+
+
+
+
+
+    /* Set nonce length, omit for 96 bits */
+    EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_AEAD_SET_IVLEN, sentinal->nlen,
+                        NULL);
+    /* Set expected tag value */
+    EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_AEAD_SET_TAG,
+                        sentinal->tlen, tag); //check
+    /* Specify key and IV */
+    EVP_DecryptInit_ex(ctx, NULL, NULL, sentinal->key, sentinal->nonce);
+  /* Set ciphertext length: only needed if we have AAD */
+    EVP_DecryptUpdate(ctx, NULL, &outlen, NULL, 36);
+  /* Zero or one call to specify any AAD */
+    EVP_DecryptUpdate(ctx, NULL, &outlen, sentinal->adata, sentinal->alen);
+  /* Decrypt plaintext, verify tag: can only be called once */
+    rv = EVP_DecryptFinal_ex(ctx, outbuf + outlen, &outlen);
+  /* Output decrypted block: if tag verify failed we get nothing */
+  if (rv > 0) {
+      printf("Plaintext:\n");
+      BIO_dump_fp(stdout, outbuf, outlen);
+      printf("%s\n", outbuf);
+  } else
+      printf("Plaintext not available: tag verify failed.\n");
+  EVP_CIPHER_CTX_free(ctx);
+
+
+
+    //DVPT, VADT, VNT, VPT, VTT
+    //
+    if(!strncmp(fname, "DVPT", strlen(fname)))
+    {
+        printf("Type is: %s at %i\n", fname,ciphersize);
+    } 
+    if(!strncmp(fname, "VADT", strlen(fname)))
+    {
+        printf("Type is: %s at %i\n", fname,ciphersize);
+    } 
+    if(!strncmp(fname, "VNT", strlen(fname)))
+    {
+        printf("Type is: %s at %i\n", fname,ciphersize);
+    } 
+    if(!strncmp(fname, "VPT", strlen(fname)))
+    {
+        printf("Type is: %s at %i\n", fname,ciphersize);
+    } 
+    if(!strncmp(fname, "VTT", strlen(fname)))
+    {
+        printf("Type is: %s at %i\n", fname,ciphersize);
+    }
+
+//////////
+//////////
+//////////
+//////////
+//////////
+////////// DVPT parser
+    while(fgets(filestream, sizeof(filestream), vparse))
+    {
+        if(strncmp(filestream, "Key =",5)==0)
+        {
+            data = strtok(filestream, "=");
+            data = strtok(NULL,"=");
+            //printf("Key: %s", data);
+            dlen = strlen(data);
+            if(data[0] == ' ')
+                memmove(data, data+1, strlen(data));
+            strncpy(sentinal->key, data, dlen);
+            printf("Key>>%s\n", sentinal->key);
+        }
+        if(strncmp(filestream, "Count =",7)==0)
+        {
+            data = strtok(filestream, "=");
+            data = strtok(NULL,"=");
+            if(data[0] == ' ')
+                memmove(data, data+1, strlen(data));
+            //printf("Count>>%s\n", data);
+            sentinal->count = atoi(data);
+            //strncpy(sentinal->count, data, strlen(data)-1);
+            printf("Test Number::::%i\n", sentinal->testnumber);
+            printf("Count>>%i\n", sentinal->count);
+        }
+
+        //if(strncmp(filestream, "Alen =",6)==0)
+        //ttype for DVPT since
+        //[Alen = 0, Plen = 0, Nlen = 7, Tlen = 4]
+        if((strncmp(filestream, "[Alen =",7)==0) &&(!strncmp(fname, "DVPT", strlen(fname))))
+        {
+            printf("*********************************\n");
+            printf("DVPT TEST\n");
+            printf("%s\n", filestream);
+            printf("*********************************\n");
+            
+            
+            set_len = 0;
+            data = strtok(filestream, ",");
+            while(data !=NULL)
+            {
+                switch (set_len)
+                {
+                    case 0:
+                        sentinal->alen = atoi(data+7);
+                        printf("alen = %i\n", sentinal->alen);
+                        dvpt_p_alen = sentinal->alen;
+                        break;
+                    case 1:
+                        sentinal->plen = atoi(data+7);
+                        printf("plen = %i\n", sentinal->plen);
+                        dvpt_p_plen = sentinal->plen;
+                        break;
+                    case 2:
+                        sentinal->nlen = atoi(data+7);
+                        printf("nlen = %i\n", sentinal->nlen);
+                        dvpt_p_nlen = sentinal->nlen;
+                        break;
+                    case 3:
+                        sentinal->tlen = atoi(data+7);
+                        printf("tlen = %i\n", sentinal->tlen);
+                        dvpt_p_tlen = sentinal->tlen;
+                        break;
+                    default:
+                        printf("Error Parsing");
+                        exit(-1);
+                }
+                data = strtok(NULL,",");
+                set_len++;
+            }
+
+        }
+           
+            //assign dvpt alen, plen, nlen, tlen
+            if(((sentinal->count % 15) > 0) && (set_len > 0) && (!strncmp(fname, "DVPT", strlen(fname))))
+            if(!strncmp(fname, "DVPT", strlen(fname)))
+            {
+                        sentinal->alen = dvpt_p_alen;
+                        //printf("alen = %i\n", sentinal->alen);
+                        sentinal->plen = dvpt_p_plen;
+                        //printf("plen = %i\n", sentinal->plen);
+                        sentinal->nlen = dvpt_p_nlen;
+                        //printf("nlen = %i\n", sentinal->nlen);
+                        sentinal->tlen = dvpt_p_tlen;
+                        //printf("tlen = %i\n", sentinal->tlen);
+
+            }
+
+
+        if(strncmp(filestream, "Nonce =",7)==0)
+        {
+            data = strtok(filestream, "=");
+            data = strtok(NULL,"=");
+            //printf("Nonce: %s", data);
+            dlen = strlen(data);
+            if(data[0] == ' ')
+                memmove(data, data+1, strlen(data));
+            strncpy(sentinal->nonce, data, dlen);
+            printf("Nonce>>%s\n", sentinal->nonce);
+        }
+        //printf("%s", filestream);
+        //vector_process(sentinal);
+
+        if(strncmp(filestream, "Adata =",7)==0)
+        {
+            data = strtok(filestream, "=");
+            data = strtok(NULL,"=");
+            if(data[0] == ' ')
+                memmove(data, data+1, strlen(data));
+            strncpy(sentinal->adata, data, strlen(data));
+            printf("Adata>>%s\n", data);
+        }
+        if((strncmp(filestream, "CT =",4)==0) && (!strncmp(fname, "DVPT", strlen(fname))))
+        {
+            data = strtok(filestream, "=");
+            data = strtok(NULL,"=");
+            if(data[0] == ' ')
+                memmove(data, data+1, strlen(data));
+            strncpy(sentinal->ct, data, strlen(data));
+            printf("CT>>%s\n", data);
+   
+
+            //For DVPT CT is the last field so we allocate a new record
+            sentinal->next = (struct vectors*)malloc(sizeof(struct vectors));
+            sentinal = sentinal->next;
+            sentinal->next= NULL; //set the nullbit
+            curr_testnumber +=1;
+            sentinal->testnumber = curr_testnumber;
+        }
+    }
+
+
+
+int vector_process(struct vectors* sentinal)
+{
+/* VADT Example Encryption Only*/
+    char * t_testtype = "VADT"; 
+    char * t_filename= "VADT128"; 
+    int t_ciphertype= 128; 
+    int t_alen=   0; 
+    int t_plen=   32; 
+    int t_nlen=   13; 
+    int t_tlen=   16; 
+    int t_count=  0; 
+    unsigned char * t_key= "8bd29b141ae465f30bac78baf28397b5"; 
+    unsigned char * t_nonce= "e5528a98bf06e8505e134dc070"; 
+    unsigned char * t_adata= "00"; 
+    unsigned char * t_ciphertext= "3152dca72e2757223ad072bf2ac8ca56bf7ceb31dee36960224619eacddeeed6f36be88e4aae35e07190d19159873b0e"; 
+    unsigned char * t_payload= "a2548d66fdbf199b10b2fa0dc1cc61f5f4b370bcffb44fbe5da97c4fa62062fb";
+
+/* DVPT Example Decryption Only*/
+/*
+    char * t_testtype = "DVPT"; 
+    char * t_filename= "DVPT128"; 
+    int t_ciphertype= 128; 
+    int t_alen=   0; 
+    int t_plen=   32; 
+    int t_nlen=   7; 
+    int t_tlen=   4; 
+    int t_count=  60; 
+    unsigned char * t_key= "642d893a067856110dfc3954bfb9c991"; 
+    unsigned char * t_nonce= "b07f8c6b6896cb"; 
+    unsigned char * t_adata= "00"; 
+    unsigned char * t_ciphertext= "5650c75940b117a89b49fd2f40906c49dd5a19febbe5156cbdda9c8279ccd04f20f0ce85"; 
+    unsigned char * t_payload= "89193ffa308804b42a6d20402bb99031cdac65ec36eb7f59f5d299df2e0b8690"; 
+*/
+
+    long hex_keylen, hex_noncelen, hex_adatalen, hex_ciphertextlen,hex_payloadlen ;
+    unsigned char * h_key;
+    unsigned char * h_nonce;
+    unsigned char * h_adata;
+    unsigned char * h_ciphertext;
+    unsigned char * h_payload;
+    //Result = Pass (0)
+    //Payload = 00
+    strncpy(sentinal->testtype,t_testtype,strlen(t_testtype));
+    strncpy(sentinal->filename,t_filename,strlen(t_filename));
+    sentinal->ciphertype= t_ciphertype;
+    sentinal->alen = t_alen;
+    sentinal->plen = t_plen;
+    sentinal->nlen = t_nlen;
+    sentinal->tlen = t_tlen;
+    sentinal->count= t_count;
+    h_key = OPENSSL_hexstr2buf(t_key, &hex_keylen);
+    h_nonce= OPENSSL_hexstr2buf(t_nonce, &hex_noncelen);
+    h_adata= OPENSSL_hexstr2buf(t_adata, &hex_adatalen);
+    h_ciphertext= OPENSSL_hexstr2buf(t_ciphertext, &hex_ciphertextlen);
+    h_payload= OPENSSL_hexstr2buf(t_payload, &hex_payloadlen);
+
+
+    strncpy(sentinal->key,h_key,strlen(h_key));
+    strncpy(sentinal->nonce,h_nonce,strlen(h_nonce));
+    strncpy(sentinal->adata,h_adata,strlen(h_adata));
+    strncpy(sentinal->ciphertext,h_ciphertext,strlen(h_ciphertext));
+    strncpy(sentinal->payload,h_payload,strlen(h_payload));
+
+    return 0;
+}

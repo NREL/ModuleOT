@@ -4,7 +4,7 @@
 	dh $@ 
 
 override_dh_auto_build:
-	dh_auto_build -- build GOPATH=$(CURDIR)
+	dh_auto_build -- build
 
 override_dh_installsystemd:
 	dh_installsystemd --name=moduleot

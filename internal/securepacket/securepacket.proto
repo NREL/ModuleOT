@@ -1,0 +1,12 @@
+syntax = "proto3";
+package securepacket;
+
+message Packet {
+    string srcIP = 1;
+    string srcPort = 2;
+    string destIP = 3;
+    string destPort = 4;
+    string packtype = 5;
+    bytes payload = 6;
+  }
+

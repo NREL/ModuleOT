@@ -1,6 +1,6 @@
 package main
 
-import "socketfunctions"
+import "moduleot/internal/socketfunctions"
 
 func main() {
 	networkChan := make(chan socketfunctions.TLSPacket, 5)

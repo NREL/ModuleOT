@@ -1,9 +1,20 @@
 /*
 NOTICE
 
-Notice: This computer software was prepared Alliance for Sustainable Energy, LLC, hereinafter the Contractor, under Contract DE-AC36-08GO28308 with the Department of Energy (DOE). All rights in the computer software are reserved by DOE on behalf of the United States Government and the Contractor as provided in the Contract. You are authorized to use this computer software for Governmental purposes but it is not to be released or distributed to the public. NEITHER THE GOVERNMENT NOR THE CONTRACTOR MAKES ANY WARRANTY, EXPRESS OR IMPLIED, OR ASSUMES ANY LIABILITY FOR THE USE OF THIS SOFTWARE. This notice including this sentence must appear on any copies of this computer software.
+Notice: This computer software was prepared Alliance for Sustainable Energy,
+LLC, hereinafter the Contractor, under Contract DE-AC36-08GO28308 with the
+Department of Energy (DOE). All rights in the computer software are reserved by
+DOE on behalf of the United States Government and the Contractor as provided in
+the Contract. You are authorized to use this computer software for Governmental
+purposes but it is not to be released or distributed to the public. NEITHER THE
+GOVERNMENT NOR THE CONTRACTOR MAKES ANY WARRANTY, EXPRESS OR IMPLIED, OR
+ASSUMES ANY LIABILITY FOR THE USE OF THIS SOFTWARE. This notice including this
+sentence must appear on any copies of this computer software.
 
-NOTICE: EXPORT OR DEEMED EXPORT OF THIS SOFTWARE MAY VIOLATE U.S. EXPORT CONTROLS. DO NOT PROVIDE THIS SOFTWARE (OR ACCESS TO THIS SOFTWARE) TO ANY NON-U.S. CITIZEN WITHOUT PROPER AUTHORIZATION. ALLIANCE WILL NOT BE RESPONSIBLE FOR ANY VIOLATION OF EXPORT CONTROL BY ANY OTHER PARTY.
+NOTICE: EXPORT OR DEEMED EXPORT OF THIS SOFTWARE MAY VIOLATE U.S. EXPORT
+CONTROLS. DO NOT PROVIDE THIS SOFTWARE (OR ACCESS TO THIS SOFTWARE) TO ANY
+NON-U.S. CITIZEN WITHOUT PROPER AUTHORIZATION. ALLIANCE WILL NOT BE RESPONSIBLE
+FOR ANY VIOLATION OF EXPORT CONTROL BY ANY OTHER PARTY.
 */
 package ifacefunctions
 

@@ -1,12 +1,12 @@
 Source: moduleot
 Maintainer: Steve Granda <steve.granda@nrel.gov>
-Build-Depends: debhelper (>= 11), golang
+Build-Depends: debhelper (>= 11), golang (>= 1.13), libssl-dev
 Standards-Version: 4.2.1
 Section: utils
 
 Package: moduleot
 Priority: extra
 Architecture: any
-Depends: nmap, ufw, python-pymodbus, fail2ban, net-tools
+Depends: fail2ban, libc6, net-tools, nmap, python-pymodbus, ufw
 Description: Secure ICS Communications
     This package provides secure encrypted communication for ICS devices

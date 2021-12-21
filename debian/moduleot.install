@@ -1,5 +1,5 @@
-motApp /usr/bin/
-motPost /usr/bin/
+bin/motApp /usr/bin/
+bin/motPost /usr/bin/
 example/example_configs/client_config_ex.json /etc/moduleot/example/
 example/example_configs/server_config_ex.json /etc/moduleot/example/
 example/example_configs/certs/rootCA.pem /etc/ssl/certs/

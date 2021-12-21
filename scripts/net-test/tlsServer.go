@@ -2,7 +2,8 @@ package main
 
 import (
 	"net"
-	"socketfunctions"
+
+	"moduleot/internal/socketfunctions"
 )
 
 func main() {
